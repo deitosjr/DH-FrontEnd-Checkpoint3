@@ -1,0 +1,138 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+body
+    {
+        margin: 0;
+    }
+
+*{font-family: roboto;}
+
+/*nav nav-link.active*/
+
+.nav .nav-link
+    {
+        color: gray;
+    }
+.nav .nav-link.active
+    {
+        background-color: transparent;
+        color: red;
+    }
+.navbar-toggler-icon {
+        border-color:gray;
+        background-image: url(
+            "data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 128, 0, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    }
+
+
+#modalLogin .modal-header {border: 0;}
+#modalLogin .modal-body {display: flex; flex-direction: column;}
+#modalLogin .modal-body img {align-items: center;}
+#modalLogin .btn {background-color: #33BB69; color: #ffffff; width:100%; margin: 25px 0 0 0;}
+#modalLogin .btn:hover {background-color: #74f0a5;}
+#modalLogin .btn:focus {background-color: #1e8849;}
+
+
+.banner
+    {
+        position: relative;
+        z-index: 5;
+        background-color: #000;
+        padding: 20px;
+
+        min-height: 600px;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+.banner .bg
+    {
+        background-image: url("./images/cover.jpg");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        opacity: .2;
+          width: 100%;
+          height: 100%;
+
+          position: absolute;
+          z-index: -1;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+    }
+
+
+
+    
+    .banner .frame{ max-width:600px; display: flex; flex-direction: column;}
+    .banner .frame H1{color: red; font-weight: 900;}
+    .banner .frame p{color: #ffffff;}
+    .banner .frame .btn{ margin-left: auto; margin-right: auto; border: 1px solid #33BB69; background-color: rgba(51,187,105,0.1); width:200px; padding:10px; transition: all .2s ease-in-out;}
+    .banner .frame a.btn {color: #ffffff; text-decoration: none;}
+    .banner .frame a:hover {background-color: rgba(116, 240, 165, 0.5);}
+    .banner .frame a:focus {background-color: rgba(30,136,73,0.15);}
+
+
+
+    .filmes{margin: 25px 0 0 0;}
+    .filmes H1 {font-weight: 900; padding: 25px;}
+    .filmes .card { cursor: pointer; height: 450px; background-color: #ffffff; border:1px solid #d3d3d3; border-radius: 15px; margin: 0 0 20px 0; box-shadow: 0px 5px 10px #d3d3d3; transition: all .2s ease-in-out;}
+    .filmes .card:hover{z-index:999; transform: scale(1.03);}
+
+    .filmes .card .card-body { position: absolute; bottom: 0; display: flex; flex-direction: column; height:160px; background-color: rgb(231, 231, 231); padding: 15px; width:100%; border-radius: 14px;}
+    .filmes .card .card-body .card-title { font-weight: bold; font-size: 12pt; }
+    .filmes .card .card-body .card-text { font-size: 12pt; }
+    .filmes .card .card-body .btn { margin-top: auto; background-color: #33BB69; color: #ffffff;}
+    .filmes .card .card-body .btn:hover {background-color: #74f0a5;}
+    .filmes .card .card-body .btn:focus {background-color: #1e8849;}
+
+        
+
+    .filmes .card.card1 { background-image: url("./images/film1.jpg"); background-position: center; background-repeat: no-repeat; background-size: cover; }
+    .filmes .card.card2 { background-image: url("./images/film2.jpg"); background-position: center; background-repeat: no-repeat; background-size: cover; }
+    .filmes .card.card3 { background-image: url("./images/film3.jpg"); background-position: center; background-repeat: no-repeat; background-size: cover; }
+    .filmes .card.card4 { background-image: url("./images/film4.jpg"); background-position: center; background-repeat: no-repeat; background-size: cover; }
+    .filmes .card.card5 { background-image: url("./images/film5.jpg"); background-position: center; background-repeat: no-repeat; background-size: cover; }
+    .filmes .card.card6 { background-image: url("./images/film6.jpg"); background-position: center; background-repeat: no-repeat; background-size: cover; }
+    
+
+
+
+.filme .banner { max-height: 700px; display: flex; align-items: center; justify-content: center; flex-direction: column; margin: 0 0 50px 0; }
+.filme .banner.filme-after { background-image: url("./images/film1.jpg");background-attachment: fixed;background-position: top center;background-repeat: no-repeat;background-size: cover; }
+.filme .banner.filme-thehill { background-image: url("./images/film2.jpg");background-attachment: fixed;background-position: top center;background-repeat: no-repeat;background-size: cover; }
+.filme .banner.filme-elcover { background-image: url("./images/film3.jpg");background-attachment: fixed;background-position: top center;background-repeat: no-repeat;background-size: cover; }
+.filme .banner.filme-cover { background-image: url("./images/film4.jpg");background-attachment: fixed;background-position: top center;background-repeat: no-repeat;background-size: cover; }
+.filme .banner.filme-joker { background-image: url("./images/film5.jpg");background-attachment: fixed;background-position: top center;background-repeat: no-repeat;background-size: cover; }
+.filme .banner.filme-rampage { background-image: url("./images/film6.jpg");background-attachment: fixed;background-position: top center;background-repeat: no-repeat;background-size: cover; }
+
+.filme H1 {font-weight: 900;}
+.filme .equipe-title {font-weight: bold; margin: 0;}
+.filme .equipe-name {margin: 0;}
+.filme .video h2 {margin: 25px 0 10px 0;}
+.filme .video iframe {border-radius: 20px;}
+.filme .stars{ margin: 0 0 25px 0; }
+
+.sobre H1 {font-weight: 900;}
+    
+
+footer 
+    {
+        margin: 50px 0 0 0;
+        background-color: #171717;
+        padding: 50px;
+        text-align: center;
+        color: gray;
+    }
+
+footer .nome{font-size: 14pt; color: #ffffff;margin:0;}
+footer svg{fill: #ffffff; width: 20px; height: 20px; margin:5px;}
+footer .data{font-size: 12pt; margin: 25px 0 0 0;}
